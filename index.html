@@ -4,13 +4,63 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="/css/main.css">
 	<title>MD Homepage</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: '#da373d',
+					}
+				}
+			}
+		}
+	</script>
 </head>
 
-<body>
-	<H1>Core rotations</H1>
-	<p>Here are a list of core rotations you will likely undertake during your clinical placement:</p>
-	<a href="/medicine">Medicine</a>
+<body class="p-4 font-serif">
+	<H1 class="text-center">MD Homepage</H1>
+	<p>insert some sample text:</p>
+	<div class="grid grid-cols-3 gap-4">
+		<div class="col-start-1">
+			<h2 class="text-center font-bold">Rotations</h2>
+			<div class="bg-slate-50 p-4 rounded-lg">
+				<p><a class="hover:font-bold" href="/rotations/medicine">Medicine</a></p>
+				<p><a class="hover:font-bold" href="/rotations/surgery">Surgery</a></p>
+				<p><a class="hover:font-bold" href="/rotations/GP">General practice</a></p>
+				<p><a class="hover:font-bold" href="/rotations/WACH">Women and children's health</a></p>
+				<p><a class="hover:font-bold" href="/rotations/psychiatry">Pyschiatry</a></p>
+				<p><a class="hover:font-bold" href="/rotations/critical care">ED, anaesthetics and ICU</a></p>
+			</div>
+		</div>
+		<div class="col-start-2">
+			<h2 class="text-center font-bold">Basic Sciences</h2>
+			<div class="bg-slate-50 p-4 rounded-lg">
+				<p><a class="hover:font-bold" href="/basic-sciences/anatomy-histology/">Anatomy & histology</a></p>
+				<p><a class="hover:font-bold" href="/basic-sciences/physiology/">Physiology</a></p>
+				<p><a class="hover:font-bold" href="/basic-sciences/biochemistry/">Biochemistry</a></p>
+				<p><a class="hover:font-bold" href="/basic-sciences/genetics/">Genetics</a></p>
+				<p><a class="hover:font-bold" href="/basic-sciences/immunology/">Immunology</a></p>
+				<p><a class="hover:font-bold" href="/basic-sciences/microbiology/">Microbiology</a></p>
+				<p><a class="hover:font-bold" href="/basic-sciences/pharmacology/">Pharmacology</a></p>
+				<p><a class="hover:font-bold" href="/basic-sciences/pathology/">Pathology</a></p>
+			</div>
+		</div>
+		<div class="col-start-3">
+			<h2 class="text-center font-bold">Exams</h2>
+			<div class="bg-slate-50 p-4 rounded-lg">
+				<p><a class="hover:font-bold" href="/exams/practice-questions">Practice questions</a></p>
+				<p><a class="hover:font-bold" href="/exams/clinical-reasoning/">Clinical reasoning</a></p>
+				<p><a class="hover:font-bold" href="/exams/osces/">OSCEs</a></p>
+				<p><a class="hover:font-bold" href="/exams/bps/">BPS</a></p>
+				<p><a class="hover:font-bold" href="/exams/gsse/">GSSE</a></p>
+				<p><a class="hover:font-bold" href="/exams/bpt/">BPT</a></p>
+			</div>
+		</div>
+	</div>
+
+
 </body> 
 </html>
