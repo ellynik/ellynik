@@ -13,54 +13,123 @@
 				extend: {
 					colors: {
 						clifford: '#da373d',
-					}
-				}
-			}
+					},
+				},
+			},
+			variants: {
+				display: ['responsive', 'group-hover', 'group-focus'],
+			},
 		}
 	</script>
 </head>
 
-<body class="p-4 font-serif">
-	<H1 class="text-center">MD Homepage</H1>
-	<p>insert some sample text:</p>
-	<div class="grid grid-cols-3 gap-4">
-		<div class="col-start-1">
-			<h2 class="text-center font-bold">Rotations</h2>
-			<div class="bg-slate-50 p-4 rounded-lg">
-				<p><a class="hover:font-bold" href="/rotations/medicine">Medicine</a></p>
-				<p><a class="hover:font-bold" href="/rotations/surgery">Surgery</a></p>
-				<p><a class="hover:font-bold" href="/rotations/GP">General practice</a></p>
-				<p><a class="hover:font-bold" href="/rotations/WACH">Women and children's health</a></p>
-				<p><a class="hover:font-bold" href="/rotations/psychiatry">Pyschiatry</a></p>
-				<p><a class="hover:font-bold" href="/rotations/critical care">ED, anaesthetics and ICU</a></p>
-			</div>
+<body class="font-sans">
+	<nav aria-label="primary" class="bg-gradient-to-r from-indigo-500 relative z-20 flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:flex-row justify-between">
+		<h1 class="text-white font-bold text-left text-3xl p-2">MD Homepage</h1>
+		<div class="flex">
+			<div class="min-w-[10rem] relative group">
+				<button class="text-indigo-800 flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Core rotations</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold" href="/rotations/medicine">Medicine</a></p>
+						<p><a class="hover:font-bold" href="/rotations/surgery">Surgery</a></p>
+						<p><a class="hover:font-bold" href="/rotations/GP">General practice</a></p>
+						<p><a class="hover:font-bold" href="/rotations/WACH">Women and children's health</a></p>
+						<p><a class="hover:font-bold" href="/rotations/psychiatry">Pyschiatry</a></p>
+						<p><a class="hover:font-bold" href="/rotations/critical care">ED, anaesthetics and ICU</a></p>
+					</div>
+					</div>
+				</div>
+			</div>  
+			
+			<div class="min-w-[10rem] relative group">
+				<button class="text-indigo-800 flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Basic sciences</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold" href="/basic-sciences/anatomy-histology/">Anatomy & histology</a></p>
+						<p><a class="hover:font-bold" href="/basic-sciences/physiology/">Physiology</a></p>
+						<p><a class="hover:font-bold" href="/basic-sciences/biochemistry/">Biochemistry</a></p>
+						<p><a class="hover:font-bold" href="/basic-sciences/genetics/">Genetics</a></p>
+						<p><a class="hover:font-bold" href="/basic-sciences/immunology/">Immunology</a></p>
+						<p><a class="hover:font-bold" href="/basic-sciences/microbiology/">Microbiology</a></p>
+						<p><a class="hover:font-bold" href="/basic-sciences/pharmacology/">Pharmacology</a></p>
+						<p><a class="hover:font-bold" href="/basic-sciences/pathology/">Pathology</a></p>
+					</div>
+					</div>
+				</div>
+			</div>   
+
+			<div class="min-w-[10rem] relative group">
+				<button class="text-indigo-800 flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Exams</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold" href="/exams/practice-questions">Practice MCQs</a></p>
+						<p><a class="hover:font-bold" href="/exams/clinical-reasoning/">Clinical reasoning</a></p>
+						<p><a class="hover:font-bold" href="/exams/osces/">OSCEs</a></p>
+						<p><a class="hover:font-bold" href="/exams/bps/">BPS</a></p>
+						<p><a class="hover:font-bold" href="/exams/gsse/">GSSE</a></p>
+						<p><a class="hover:font-bold" href="/exams/bpt/">BPT</a></p>
+					</div>
+					</div>
+				</div>
+			</div>   
 		</div>
-		<div class="col-start-2">
-			<h2 class="text-center font-bold">Basic Sciences</h2>
-			<div class="bg-slate-50 p-4 rounded-lg">
-				<p><a class="hover:font-bold" href="/basic-sciences/anatomy-histology/">Anatomy & histology</a></p>
-				<p><a class="hover:font-bold" href="/basic-sciences/physiology/">Physiology</a></p>
-				<p><a class="hover:font-bold" href="/basic-sciences/biochemistry/">Biochemistry</a></p>
-				<p><a class="hover:font-bold" href="/basic-sciences/genetics/">Genetics</a></p>
-				<p><a class="hover:font-bold" href="/basic-sciences/immunology/">Immunology</a></p>
-				<p><a class="hover:font-bold" href="/basic-sciences/microbiology/">Microbiology</a></p>
-				<p><a class="hover:font-bold" href="/basic-sciences/pharmacology/">Pharmacology</a></p>
-				<p><a class="hover:font-bold" href="/basic-sciences/pathology/">Pathology</a></p>
+	</nav>
+
+	<div class="p-4 ">
+		<H1 class="text-center">sample</H1>
+		<p>insert some sample text:</p>
+		<div class="grid grid-cols-3 gap-4">
+			<div class="col-start-1">
+				<div class="bg-slate-100 pr-4 pl-4 pb-4 pt-1 rounded-lg">
+					<h2 class="text-center text-2xl leading-loose font-semibold">Rotations</h2>
+					<p><a class="hover:font-bold" href="/rotations/medicine">Medicine</a></p>
+					<p><a class="hover:font-bold" href="/rotations/surgery">Surgery</a></p>
+					<p><a class="hover:font-bold" href="/rotations/GP">General practice</a></p>
+					<p><a class="hover:font-bold" href="/rotations/WACH">Women and children's health</a></p>
+					<p><a class="hover:font-bold" href="/rotations/psychiatry">Pyschiatry</a></p>
+					<p><a class="hover:font-bold" href="/rotations/critical care">ED, anaesthetics and ICU</a></p>
+				</div>
 			</div>
-		</div>
-		<div class="col-start-3">
-			<h2 class="text-center font-bold">Exams</h2>
-			<div class="bg-slate-50 p-4 rounded-lg">
-				<p><a class="hover:font-bold" href="/exams/practice-questions">Practice questions</a></p>
-				<p><a class="hover:font-bold" href="/exams/clinical-reasoning/">Clinical reasoning</a></p>
-				<p><a class="hover:font-bold" href="/exams/osces/">OSCEs</a></p>
-				<p><a class="hover:font-bold" href="/exams/bps/">BPS</a></p>
-				<p><a class="hover:font-bold" href="/exams/gsse/">GSSE</a></p>
-				<p><a class="hover:font-bold" href="/exams/bpt/">BPT</a></p>
+			<div class="col-start-2">
+				<div class="bg-slate-100 pr-4 pl-4 pb-4 pt-1 rounded-lg">
+					<h2 class="text-center text-2xl leading-loose font-semibold">Basic sciences</h2>
+					<p><a class="hover:font-bold" href="/basic-sciences/anatomy-histology/">Anatomy & histology</a></p>
+					<p><a class="hover:font-bold" href="/basic-sciences/physiology/">Physiology</a></p>
+					<p><a class="hover:font-bold" href="/basic-sciences/biochemistry/">Biochemistry</a></p>
+					<p><a class="hover:font-bold" href="/basic-sciences/genetics/">Genetics</a></p>
+					<p><a class="hover:font-bold" href="/basic-sciences/immunology/">Immunology</a></p>
+					<p><a class="hover:font-bold" href="/basic-sciences/microbiology/">Microbiology</a></p>
+					<p><a class="hover:font-bold" href="/basic-sciences/pharmacology/">Pharmacology</a></p>
+					<p><a class="hover:font-bold" href="/basic-sciences/pathology/">Pathology</a></p>
+				</div>
+			</div>
+			<div class="col-start-3">
+				<div class="bg-slate-100 pr-4 pl-4 pb-4 pt-1 rounded-lg">
+					<h2 class="text-center text-2xl leading-loose font-semibold">Exams</h2>
+					<p><a class="hover:font-bold" href="/exams/practice-questions">Practice questions</a></p>
+					<p><a class="hover:font-bold" href="/exams/clinical-reasoning/">Clinical reasoning</a></p>
+					<p><a class="hover:font-bold" href="/exams/osces/">OSCEs</a></p>
+					<p><a class="hover:font-bold" href="/exams/bps/">BPS</a></p>
+					<p><a class="hover:font-bold" href="/exams/gsse/">GSSE</a></p>
+					<p><a class="hover:font-bold" href="/exams/bpt/">BPT</a></p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-
 </body> 
+
 </html>
