@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/main.css">
+	<title>Medicine</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: '#da373d',
+					},
+				},
+			},
+			variants: {
+				display: ['responsive', 'group-hover', 'group-focus'],
+			},
+		}
+	</script>
+</head>
+
+<body class="font-sans">
+    <!--update header-->
+    <nav aria-label="primary" class="bg-cyan-800 relative z-20 flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:flex-row justify-between">
+		<div class="flex items-center">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-12 h-12 p-1">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"/>
+			</svg>
+			<a class="text-white font-bold text-left text-4xl p-1" href="/">the MDfiles</a>
+		</div>
+		<div class="flex">
+			<div class="min-w-[10rem] relative group">
+				<button class="text-white flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Core rotations</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine">Medicine</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/surgery">Surgery</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/GP">General practice</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/WACH">Women and children's health</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/psychiatry">Pyschiatry</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/critical care">ED, anaesthetics and ICU</a></p>
+					</div>
+					</div>
+				</div>
+			</div>  
+			
+			<div class="min-w-[10rem] relative group">
+				<button class="text-white flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Basic sciences</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/anatomy-histology/">Anatomy & histology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/physiology/">Physiology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/biochemistry/">Biochemistry</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/genetics/">Genetics</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/immunology/">Immunology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/microbiology/">Microbiology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/pharmacology/">Pharmacology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/pathology/">Pathology</a></p>
+					</div>
+					</div>
+				</div>
+			</div>   
+
+			<div class="min-w-[10rem] relative group">
+				<button class="text-white flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Exams</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/practice-questions">Practice MCQs</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/clinical-reasoning/">Clinical reasoning</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/osces/">OSCEs</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/bps/">BPS</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/gsse/">GSSE</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/bpt/">BPT</a></p>
+					</div>
+					</div>
+				</div>
+			</div>   
+		</div>
+	</nav>
+    <div class="p-4 ">
+            <h1 class="text-center text-4xl">Cardiology</h1>
+        <div>
+            <h2 class="text-left text-2xl">Conditions list</h2>
+            <div class="grid grid-cols-5 gap-2 p-2">
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Acute aortic dissection</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Acute pericarditis</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Cardiac ischaemia</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Cardiac tamponade</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Cardiac failure</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Constrictive pericarditis</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Cor pulmonale</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Hypertensive encephalopathy</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Hypertensive retinopathy</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Malignant hypertension</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Myocarditis</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Systemic hypertension</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Sinus arrhythmia</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Ectopic beats</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Heart block and pacing</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Atrial fibrillation</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Supraventricular tachycardia</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Ventricular tachycardia</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">QT interval (long or short)</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Mitral stenosis</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Mitral regurgitation</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Mitral valve prolapse</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Aortic stenosis</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Aortic regurgitation</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Tricuspid stenosis</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Tricuspid regurgitation</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Pulmonary stenosis</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Marfan syndrome</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Atrial septal defect</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Ventricular septal defect</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Hypertrophic cardiomyopathy</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Coarctation of the aorta</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Prosthetic valve replacement</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Rheumatic heart disease</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Infective endocarditis</a>
+                <a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine/cardiology/acute-aortic-dissection">Prinzmetal angina</a>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-left text-2xl">Lecture notes</h2>
+        </div>
+        <div>
+            <h2 class="text-left text-2xl">Learning points</h2>
+        </div>
+        <div>
+            <h2 class="text-left text-2xl">Pharmacology</h2>
+        </div>
+    </div>    
+</body>
+
+</html>

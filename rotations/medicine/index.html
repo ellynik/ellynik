@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/main.css">
+	<title>Medicine</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: '#da373d',
+					},
+				},
+			},
+			variants: {
+				display: ['responsive', 'group-hover', 'group-focus'],
+			},
+		}
+	</script>
+</head>
+
+<body class="font-sans">
+    <!--update header-->
+	<nav aria-label="primary" class="bg-cyan-800 relative z-20 flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:flex-row justify-between">
+		<div class="flex items-center">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-12 h-12 p-1">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"/>
+			</svg>
+			<a class="text-white font-bold text-left text-4xl p-1" href="/">the MDfiles</a>
+		</div>
+		<div class="flex">
+			<div class="min-w-[10rem] relative group">
+				<button class="text-white flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Core rotations</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/medicine">Medicine</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/surgery">Surgery</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/GP">General practice</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/WACH">Women and children's health</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/psychiatry">Pyschiatry</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/rotations/critical care">ED, anaesthetics and ICU</a></p>
+					</div>
+					</div>
+				</div>
+			</div>  
+			
+			<div class="min-w-[10rem] relative group">
+				<button class="text-white flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Basic sciences</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/anatomy-histology/">Anatomy & histology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/physiology/">Physiology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/biochemistry/">Biochemistry</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/genetics/">Genetics</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/immunology/">Immunology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/microbiology/">Microbiology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/pharmacology/">Pharmacology</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/basic-sciences/pathology/">Pathology</a></p>
+					</div>
+					</div>
+				</div>
+			</div>   
+
+			<div class="min-w-[10rem] relative group">
+				<button class="text-white flex flex-row items-center w-full px-4 py-4 mt-2 text-base font-bold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
+					<span>Exams</span>
+				</button>
+				<div class="absolute z-10 hidden bg-grey-200 group-hover:block">
+					
+					<div class="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
+					<div class="grid grid-cols-1 gap-4 ">
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/practice-questions">Practice MCQs</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/clinical-reasoning/">Clinical reasoning</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/osces/">OSCEs</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/bps/">BPS</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/gsse/">GSSE</a></p>
+						<p><a class="hover:font-bold hover:text-cyan-800" href="/exams/bpt/">BPT</a></p>
+					</div>
+					</div>
+				</div>
+			</div>   
+		</div>
+	</nav>
+    <div class="p-4 ">
+		<H1 class="text-center text-4xl">Medicine</H1>
+		<p>insert some sample text:</p>
+		<div class="grid grid-cols-4 gap-4 p-4">
+			<a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/cardiology">Cardiology</a>
+			<a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/pulmonology">Pulmonology</a>
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/gastroenterology">Gastroenterology</a>
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/renal">Renal</a>	
+			<a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/neurology/">Neurology</a>	
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/endocrinology/">Endocrinology</a>
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/rheumatology/">Rheumatology</a>
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/dermatology/">Dermatology</a>	
+			<a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/infectious-disease">Infectious disease</a>	
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/immunology/">Immunology</a>
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/acute-therapeutics/">Acute therapeutics</a>
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/genetics/">Genetics</a>	
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/palliative-care">Palliative care</a>	
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/oncology/">Oncology</a>
+            <a class="bg-slate-100 p-4 rounded-lg hover:bg-cyan-700 hover:text-white" href="/rotations/medicine/haematology/">Haematology</a>	
+		</div>
+	</div>
+</body> 
+
+</html>
